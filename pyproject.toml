@@ -39,7 +39,7 @@ ipykernel = "^6.29.5"
 
 [tool.poetry.group.lint.dependencies]
 black = { version = "^23.10.0", extras = ["jupyter"] }
-flake8 = "^6.0.0"
+flake8 = "^7.1.1"
 # Exclude docformatter 1.6.0 to avoid this issue: https://github.com/PyCQA/docformatter/issues/161
 docformatter = "^1.4,<1.6.0"
 isort = "^5.12.0"
