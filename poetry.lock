@@ -850,7 +850,7 @@ version = "0.16.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
 optional = false
 python-versions = ">=3.8"
-groups = ["dev", "doc"]
+groups = ["doc"]
 files = [
     {file = "h11-0.16.0-py3-none-any.whl", hash = "sha256:63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"},
     {file = "h11-0.16.0.tar.gz", hash = "sha256:4e35b956cf45792e4caa5885e69fba00bdbc6ffafbfa020300e549b208ee5ff1"},
@@ -2960,14 +2960,14 @@ typing-extensions = ">=4.1.1,<5.0.0"
 
 [[package]]
 name = "quri-parts-circuit"
-version = "0.21.0"
+version = "0.22.0"
 description = "Platform-independent quantum circuit library"
 optional = false
 python-versions = "<4.0.0,>=3.9.8"
 groups = ["main"]
 files = [
-    {file = "quri_parts_circuit-0.21.0-py3-none-any.whl", hash = "sha256:a2583c84569eb1155e1fb967cb508df527e7c5544cd420c7ba2fd2388cefcf5f"},
-    {file = "quri_parts_circuit-0.21.0.tar.gz", hash = "sha256:bdc3bfb584e8b2f5a09585d4fed75ed4a02b09d1fcd0399fc80fc653ff6f526b"},
+    {file = "quri_parts_circuit-0.22.0-py3-none-any.whl", hash = "sha256:85a07e38ca112532f13305157f6995729a5c3ac13d60521e369f56e7a4121d68"},
+    {file = "quri_parts_circuit-0.22.0.tar.gz", hash = "sha256:bbf180ab51ea5df18bf83929ef978f2cde351f6f54001195adb0a9c5a0d37d3d"},
 ]
 
 [package.dependencies]
