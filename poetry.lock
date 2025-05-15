@@ -850,7 +850,7 @@ version = "0.16.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
 optional = false
 python-versions = ">=3.8"
-groups = ["dev", "doc"]
+groups = ["doc"]
 files = [
     {file = "h11-0.16.0-py3-none-any.whl", hash = "sha256:63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"},
     {file = "h11-0.16.0.tar.gz", hash = "sha256:4e35b956cf45792e4caa5885e69fba00bdbc6ffafbfa020300e549b208ee5ff1"},
@@ -3033,14 +3033,14 @@ typing-extensions = ">=4.1.1,<5.0.0"
 
 [[package]]
 name = "quri-parts-qulacs"
-version = "0.21.0"
+version = "0.22.0"
 description = "A plugin to use Qulacs with QURI Parts"
 optional = false
 python-versions = "<4.0.0,>=3.9.8"
 groups = ["main"]
 files = [
-    {file = "quri_parts_qulacs-0.21.0-py3-none-any.whl", hash = "sha256:2fd2c52c6e90bd1692919102fa4d407d5022e9c79c70182f83bbf28a5ca9c86f"},
-    {file = "quri_parts_qulacs-0.21.0.tar.gz", hash = "sha256:35a2573b2a23d68348b109568a39b8e0574e3c5f97da8f1fd50498a3f622de33"},
+    {file = "quri_parts_qulacs-0.22.0-py3-none-any.whl", hash = "sha256:e710112b9996660913812adf0d330fb38610c6c2adfae4b949d9f1f770ec6725"},
+    {file = "quri_parts_qulacs-0.22.0.tar.gz", hash = "sha256:bb10b945bf8ee0b63833bec9c01abf9ef0edaf1b314aa2a46ccde5a7d6d0d02b"},
 ]
 
 [package.dependencies]
