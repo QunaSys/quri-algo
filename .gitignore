@@ -132,3 +132,7 @@ dmypy.json
 
 # License metadata of dependencies
 .licenses/
+
+# docs
+docs/quri_algo
+docs/_build
