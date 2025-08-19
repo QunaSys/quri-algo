@@ -1,0 +1,52 @@
+name: Document
+
+on:
+  pull_request:
+    paths:
+      - quri_algo/*.py
+      - docs
+      - poetry.lock
+      - .github/workflows/doc.yml
+  push:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - uses: ./.github/actions/setup
+
+    - name: Download pandoc
+      if: steps.cache-pandoc.outputs.cache-hit != 'true'
+      run: |
+        wget https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb
+
+    - name: Install pandoc
+      run: |
+        yes | sudo dpkg -i pandoc-2.18-1-amd64.deb
+
+    - run: |
+        poetry env use 3.11
+        poetry install --only main,doc
+
+    - run: poetry run make html
+      working-directory: docs
+
+      #- name: deploy to Netlify
+      #  uses: nwtgck/actions-netlify@v2.0
+      #  with:
+      #    publish-dir: './docs/_build'
+      #    production-branch: main
+      #    alias: deploy-preview-${{ github.event.number }}
+      #    github-token: ${{ secrets.GITHUB_TOKEN }}
+      #    enable-pull-request-comment: true
+      #  env:
+      #    NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #    NETLIFY_SITE_ID: XXXXXX-XXX-XXXXX-XXXXXXXXXX  <- update this
