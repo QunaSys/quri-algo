@@ -445,7 +445,7 @@ files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
-markers = {main = "platform_system == \"Windows\" or sys_platform == \"win32\"", ipykernel = "sys_platform == \"win32\"", lint = "sys_platform == \"win32\" or platform_system == \"Windows\"", test = "sys_platform == \"win32\""}
+markers = {main = "sys_platform == \"win32\" or platform_system == \"Windows\"", ipykernel = "sys_platform == \"win32\"", lint = "sys_platform == \"win32\" or platform_system == \"Windows\"", test = "sys_platform == \"win32\""}
 
 [[package]]
 name = "comm"
@@ -3088,14 +3088,14 @@ quri-parts-qulacs = "*"
 
 [[package]]
 name = "quri-parts-qulacs"
-version = "0.22.1"
+version = "0.23.0"
 description = "A plugin to use Qulacs with QURI Parts"
 optional = false
 python-versions = "<4.0.0,>=3.9.8"
 groups = ["main"]
 files = [
-    {file = "quri_parts_qulacs-0.22.1-py3-none-any.whl", hash = "sha256:5f947f56b21e0935f07feba91a0b3bb25ecd7655e1cfd5d96c9105533ba00709"},
-    {file = "quri_parts_qulacs-0.22.1.tar.gz", hash = "sha256:a38a17dc7c4b53794b49ce5d2bc60cf32f6e9cfed17a2cea5cdf12a20b0cca05"},
+    {file = "quri_parts_qulacs-0.23.0-py3-none-any.whl", hash = "sha256:936719bc55370b45da5a1b550ecf6d096cd15b51937fa56173bcb1d901bd03b0"},
+    {file = "quri_parts_qulacs-0.23.0.tar.gz", hash = "sha256:0cf67ddad74db8d30d72aa0d8c6af2af030d9090db73ca6fa23fed01ea3196b0"},
 ]
 
 [package.dependencies]
@@ -4023,4 +4023,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4"
-content-hash = "d79dfd9434bc868e3d1a12dc7a8f09215332ec697f837c5257cf0b2425ea0567"
+content-hash = "1221ca72834796ed8f4d7ac320bd32280e9f91fcd2070650d16332cf74e8e676"
