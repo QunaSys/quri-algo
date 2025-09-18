@@ -1,3 +1,5 @@
+⚠️ ___THIS REPOSITORY IS ARCHIVED AND IS NO LONGER BEING MAINTAINED. CONTENTS HAVE BEEN MOVED TO https://github.com/QunaSys/quri-sdk. For a guide on how to migrate existing PRs, please see https://github.com/QunaSys/quri-algo/blob/main/MIGRATION.md___ ⚠️
+
 # Welcome to QURI Algo!
 
 QURI Algo is an open source library based on [QURI Parts](https://github.com/QunaSys/quri-parts) featuring ready to use quantum algorithms. QURI Algo provides
